@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  margin-top: 3rem;
+}
+
+.main-image{
+  border-radius: 10px;
+}
+
+.small-images{
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+.block{
+  padding: 3rem;
+}
+
+.btn-primary{
+  width: 200px;
+  padding: 10px;
+  margin-left: 15px;
+}
+.btn-secondary{
+  width: 200px;
+  padding: 10px;
+}
+
