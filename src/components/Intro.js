@@ -1,7 +1,16 @@
 import React from 'react'
 import './intro.css'
+import Shopping from './Shopping'
+import { lists } from './lists'
 
 const Intro = () => {
+
+const handleSubmit = () => {
+  return (
+    {lists}
+  )
+}
+
   return (
     <>
       <div className="container">
@@ -18,8 +27,8 @@ const Intro = () => {
         </div>
         <div className="right">
           <div className="block">
-            <h5>Sneaker Company</h5>
-            <h1>Fall Edition Small Sneakers</h1>
+            <h5 className="company">Sneaker Company</h5>
+            <h1 className="company-desc">Fall Edition Small Sneakers</h1>
             <p>
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -32,13 +41,15 @@ const Intro = () => {
             0
             <i class="fas fa-plus"></i>
             </button>
-            <button type="button" className="btn btn-primary">
+            <button type="button" className
+            ="btn btn-primary" onClick={handleSubmit}>
             <i className="far fa-shopping-cart"></i>
             Add to card
             </button>
           </div>
         </div>
       </div>
+      <Shopping/>
     </>
   )
 }

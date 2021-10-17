@@ -1,6 +1,14 @@
 import React from 'react'
+import './intro.css'
+import Shopping from './Shopping'
+import { lists } from './lists'
 
 const Navbar = () => {
+
+  const listItems = lists.map((list)=> 
+    <li>{list}</li>
+    )
+
   return (
     <div>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -28,7 +36,10 @@ const Navbar = () => {
         </li>
       </ul>
       <form className="d-flex">
-        <i className="far fa-shopping-cart"></i>
+        <i className="far fa-shopping-cart">
+          <Shopping key={lists.id}/>
+         
+        </i>
         <i className="fas fa-user-circle"></i>
       </form>
     </div>
