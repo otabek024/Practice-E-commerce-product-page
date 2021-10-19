@@ -37,7 +37,7 @@ const Navbar = () => {
       </ul>
       <form className="d-flex">
         <i className="far fa-shopping-cart">
-          <Shopping key={lists.id}/>
+          <h1><Shopping key={lists.id} /></h1>
          
         </i>
         <i className="fas fa-user-circle"></i>
